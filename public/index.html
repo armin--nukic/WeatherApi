@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js" integrity="sha256-KDK3xm/GlUAv2dBVItuCM6jjCCtAVrjEfsdpcuMbN5M=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.js" integrity="sha256-PPDfjhgNGqvcOaMYeomsE3Tgmh23oXG0Vg6twrbfi1E=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Vjezba vrijeme</title>
+</head>
+<body>
+
+    
+   <h1>Vrijeme</h1>
+   
+   <div><a href="/">ENTER</a>  | <a href="/logs">LISTA</a> </div>
+
+   <p>latitude: <span id="latitude"></span>&deg;<br>
+    longitude: <span id="longitude"></span>&deg;
+    </p>
+    <p>
+        The weather here is <span id="summary"></span> with a temperature
+        <span id="temperature"></span>&deg; C
+    </p>
+
+    <p>
+        It is in the city <span id="city"></span> in the location 
+        <span id="location"></span> and contrectration of particular matter is <span id="air_matter"></span>
+    </p>
+
+</br>
+
+    <label for="inputic">enter your mood</label>
+    <input type="text" id="inputic" value="arminbyDefault">
+    <button id="geolocate">Pritisnider</button>
+   
+
+<script src="sketch.js"> </script>
+
+</body>
+</html>
